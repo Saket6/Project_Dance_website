@@ -1,0 +1,23 @@
+extends base.pug
+block style 
+    style 
+        include ../static/style.css
+        include ../static/about.css
+block navbar 
+    nav#navbar
+            ul 
+                a(href="/")
+                    img(src="static/logo.jpg")#img
+                li #[a(href="/").anchor#home HOME ]
+                li #[a(href="/about").anchor.active#about ABOUT US ]
+                //- li #[a(href="/").anchor#services SERVICES ]
+                li #[a(href="/schedule").anchor#classinfo CLASS INFO]
+                li #[a(href="/contact").anchor#contact SIGN UP]
+block content 
+    div.section(data-aos="zoom-in")
+        h1 
+            |About DANCE'S WAY..
+        p 
+            |Dance's way was founded in 2014 in the city of Cuttack,Odisha.
+            |Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam inventore soluta voluptate qui consectetur, totam, est quos, vitae fuga incidunt magnam rerum aliquid temporibus numquam pariatur laboriosam officia ad tempora? Ullam, nisi totam optio quo mollitia vel aut. Eum nobis dolorum dolor vitae aperiam asperiores non voluptate laborum alias!
+            |Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facilis eligendi consequatur iure neque, quisquam beatae. Totam voluptas ad asperiores dolores et. Sunt blanditiis natus nesciunt quod similique maxime id error illo alias itaque officiis incidunt atque sequi nostrum qui aliquam, autem ipsa corrupti ut voluptate eaque animi laudantium deleniti corporis. Voluptate, rem illum unde ex consectetur optio, asperiores dolor perspiciatis fugiat veniam earum sit consequatur sequi suscipit dignissimos et nostrum quaerat provident id incidunt quae ea magni. Quo placeat quod tenetur aliquam assumenda, illum laudantium maxime. Nobis voluptas, aspernatur reiciendis dolor perferendis itaque nesciunt aut veritatis ab, at temporibus.

@@ -1,0 +1,30 @@
+extends base.pug
+//- block scripts   
+//-     //- script(src='/static/script.js')
+block style 
+    style
+        include ../static/style.css 
+        include ../static/stylecontact.css 
+block navbar 
+    nav#navbar
+            ul 
+                a(href="/")
+                    img(src="static/logo.jpg")#img
+                li #[a(href="/").anchor#home HOME ]
+                li #[a(href="/about").anchor#about ABOUT US ]
+                //- li #[a(href="/").anchor#services SERVICES ]
+                li #[a(href="/schedule").anchor#classinfo CLASS INFO]
+                li #[a(href="/contact").anchor.active#contact SIGN UP]
+block content 
+    
+    h2 
+        |CONTACT US
+    form#contact(action='/contact', method='post',data-aos="zoom-in" )
+        input#name(type='text', name='name', placeholder='Enter your name')
+        input#gender(type='text', name='gender', placeholder='Enter your gender')
+        input#age(type='number', name='age', placeholder='Enter your age')
+        textarea#address(name='address', cols='30', rows='10', placeholder='Enter your address')
+        textarea#more(name='more', cols='30', rows='10', placeholder='more about you')
+        .btnclass
+            button.btn
+                |SUBMIT NOW

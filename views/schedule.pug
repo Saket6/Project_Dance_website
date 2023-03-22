@@ -1,0 +1,115 @@
+extends base.pug
+block style  
+    style
+        include ../static/style.css 
+        include ../static/schedule.css
+        
+block navbar 
+    nav#navbar
+            ul 
+                a(href="/")
+                    img(src="static/logo.jpg")#img
+                li #[a(href="/").anchor#home HOME ]
+                li #[a(href="/about").anchor#about ABOUT US ]
+                //- li #[a(href="/").anchor#services SERVICES ]
+                li #[a(href="/schedule").anchor.active#classinfo CLASS INFO]
+                li #[a(href="/contact").anchor#contact SIGN UP]
+block content 
+        h1 
+            |DANCE'S WAY SCHEDULE  
+        table#schedule(data-aos="zoom-in") 
+            thead
+                tr
+                    th 
+                        |TIMING  
+                    th 
+                        |MONDAY 
+                    th 
+                        |TUESDAY 
+                    th 
+                        |WEDNESDAY
+                    th 
+                        |THURSDAY
+                    th 
+                        |FRIDAY
+            tbody 
+                tr
+                    td 
+                        |9:00 
+                    td 
+                        |JAZZ
+                    td 
+                        |FLAMENCO
+                    td 
+                        |CLAQUE
+                    td 
+                        |BALLETE
+                    td 
+                        |HIP-HOP
+                tr
+                    td 
+                        |10:00 
+                    td 
+                        |JAZZ
+                    td 
+                        |FLAMENCO
+                    td 
+                        |CLAQUE
+                    td 
+                        |BALLETE
+                    td 
+                        |HIP-HOP
+                tr
+                    td 
+                        |11:00 
+                    td 
+                        |JAZZ
+                    td 
+                        |FLAMENCO
+                    td 
+                        |CLAQUE
+                    td 
+                        |BALLETE
+                    td 
+                        |HIP-HOP
+                tr
+                    td 
+                        |12:00 
+                    td 
+                        |JAZZ
+                    td 
+                        |FLAMENCO
+                    td 
+                        |CLAQUE
+                    td 
+                        |BALLETE
+                    td 
+                        |HIP-HOP
+                tr
+                    td 
+                        |1:00 
+                    td 
+                        |JAZZ
+                    td 
+                        |FLAMENCO
+                    td 
+                        |CLAQUE
+                    td 
+                        |BALLETE
+                    td 
+                        |HIP-HOP
+                tr
+                    td 
+                        |2:00 
+                    td 
+                        |JAZZ
+                    td 
+                        |FLAMENCO
+                    td 
+                        |CLAQUE
+                    td 
+                        |BALLETE
+                    td 
+                        |HIP-HOP
+
+

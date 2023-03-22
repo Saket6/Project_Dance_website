@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Danceway.com
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(content='width=device-width, initial-scale=1' name='viewport')
+        //- meta(charset='UTF-8')
+        //- meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        link(href='https://unpkg.com/aos@2.3.0/dist/aos.css', rel='stylesheet')
+        //- block scripts
+        block style             
+    body
+        block navbar
+        block content
+        section#footer  
+            |Copyright @saketnanda164@gmail.com
+        script(src='https://unpkg.com/aos@2.3.0/dist/aos.js')
+        script(src='../static/script.js')
+        script.
+            AOS.init({
+            duration: 800,
+                    })

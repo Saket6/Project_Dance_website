@@ -1,0 +1,134 @@
+body::before
+{
+    content: "";
+    background: url("../static/bc1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 110%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+form{
+    box-shadow: rgb(0 0 0 / 24%) 6px 12px 13px;
+    /* box-shadow: 2px 4px 0px 5px; */
+    margin: 20px auto;
+    width: 22em;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffdfdb0;
+    /* align-items: center; */
+    border-radius: 21px;
+}
+form input
+{
+    /* width: 18em; */
+    padding: 14px;
+    color: rgb(0, 0, 0);
+    margin: 8px;
+    outline: none;
+    border: solid 3px rgb(58, 9, 77);
+    border-radius: 10px;
+    background-color: rgb(237, 237, 237);
+}
+form #address
+{
+    padding: 7px;
+    border: solid 3px rgb(58, 9, 77);
+    border-radius: 10px;
+    margin: 8px;;
+    height: 100px;
+     background-color:  rgb(237, 237, 237);
+     color: rgb(0, 0, 0);
+}
+form #more
+{
+    padding: 7px;
+    border: solid 3px rgb(58, 9, 77);
+    border-radius: 10px;
+    margin: 8px;
+    height: 100px;
+     background-color: rgb(237, 237, 237);
+     color: rgb(0, 0, 0);
+}
+/* .container2
+{
+    height: 82vh;
+} */
+.btn
+{
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bold;
+    width: 8em;
+    height: 3em;
+    border-radius: 15px;
+    background-color: brown;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(168, 6, 6);
+    transition: 1s;
+}
+.btnclass
+{
+    display: flex;
+    justify-content: center;
+}
+h2
+{
+    width: 6em;
+    position: relative;
+    font-weight: bold;
+    margin: 22px auto auto;
+    color: #088178;
+}
+h2::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -8px;
+    left: 30%;
+    
+    animation-name: underline;
+    animation-duration: 0.3s;
+}
+@keyframes underline {
+    0%{
+        width: 0%;
+        left: 50%;
+        right: 50%;
+    }
+    100%
+    {
+        width: 40%;
+        left: 30%;
+    }
+}
+
+@media(max-width: 740px)
+{
+    form
+    {
+        width: 18em;
+        padding: 20px;
+    }
+}
+
+@media(max-width: 492px)
+{
+    form
+    {
+        width: 15em;
+        border-radius: 10px;
+        padding: 15px;
+    }
+}
